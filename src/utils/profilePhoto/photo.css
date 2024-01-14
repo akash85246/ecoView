@@ -1,0 +1,36 @@
+/* styles.css */
+
+.circular-photo {
+   width: 4rem;
+  height: 4rem;
+}
+.circular-photo {
+  position: relative;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  overflow: hidden;
+}
+
+.photo-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 2px solid transparent;
+  border-radius: inherit;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.circular-photo:hover .photo-border {
+  border-color: #ffffff; /* Change to your desired border color on hover */
+  animation: rotateBorder 2s linear infinite; /* Adjust the animation duration as needed */
+}
+
+@keyframes rotateBorder {
+  to {
+    transform: rotate(360deg);
+  }
+}

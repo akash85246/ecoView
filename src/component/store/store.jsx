@@ -1,4 +1,9 @@
+import Navbar from "../../utils/navbar/navbar";
 import "./store.css";
 export default function Store(props) {
-  return <div>I am store</div>;
+  return (
+    <>
+      <Navbar></Navbar>
+    </>
+  );
 }
