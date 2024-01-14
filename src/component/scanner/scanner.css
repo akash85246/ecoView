@@ -1,0 +1,58 @@
+body {
+  background-color: black;
+  background-image: linear-gradient(
+    to bottom left,
+    rgba(0, 1, 8, 0.5) 70%,
+    rgba(8, 126, 105, 0.5) 100%
+  );
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.scannerContainer>div > h1 {
+  color: #fad302;
+  font-family: Montserrat;
+  font-size: 2.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+.scannerContainer>div > p {
+  color: #03a9d3;
+  font-family: Montserrat;
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+}
+.scannerContainer {
+  display: flex;
+
+  align-items: center;
+  flex-direction: column;
+}
+.scannerOptions {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  width: 75rem;
+  border-radius: 25px;
+  padding: 0.5rem 3rem;
+}
+.scannerIcon {
+  width: 5rem;
+  height: 5rem;
+  margin: auto;
+  border-radius: 50%;
+  border: none;
+  background-color: #f33;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+.scannerIcon:hover {
+  background-color: rgb(164, 38, 38);
+}
+.info{
+  padding:1rem 5rem;
+}

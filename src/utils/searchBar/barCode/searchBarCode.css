@@ -1,0 +1,26 @@
+.barCodeImgScannerContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20rem;
+}
+.barCodeImgScanner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 15px;
+padding: 0 1rem;
+
+  text-align: left;
+  width: 100%;
+  background-color: #f0f0f0;
+}
+
+.barCodeImgScanner>div>h1{
+    color: #000;
+font-family: Montserrat;
+font-size: 1.2rem;
+font-style: normal;
+font-weight: 500;
+line-height: 1.625rem; /
+}
