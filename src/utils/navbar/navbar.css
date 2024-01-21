@@ -2,7 +2,10 @@
   display: flex;
   justify-content: space-between;
   padding: 0 1.5rem;
-  position: sticky;
+  position: fixed;
+  background: #000;
+  width: 96vw;
+  z-index: 1;
 }
 
 .navbar > section,
@@ -50,6 +53,7 @@
   padding: 0.4rem 1rem;
   width: 6rem;
   margin: 0 0.5rem;
+  cursor: pointer;
 }
 .signUp {
   background-color: white;
