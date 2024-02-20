@@ -1,0 +1,79 @@
+.stories {
+  background-image: url("../../assets/aboutBackground.svg");
+  padding-top: 1rem;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  background-color: rgba(45, 192, 113, 1);
+
+  padding: 5rem 0;
+  height: 50vh;
+  padding-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+}
+.stories > h1 {
+  font-family: Montserrat;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+}
+.stories > h3 {
+  width: 50%;
+  text-align: center;
+
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  font-weight: 400;
+
+  text-align: center;
+}
+.stories > button {
+  border: 2px solid white;
+  color: white;
+  border-radius: 50px;
+  background-color: transparent;
+  padding: 1rem 3rem;
+  margin-top: 2rem;
+  cursor: pointer;
+
+  font-family: Montserrat;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.team {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+.teamHeading {
+  text-align: center;
+  color: white;
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.team {
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  align-items: center;
+  max-width: 70vw;
+  margin: auto;
+}
+
+@media screen and (max-width: 900px) {
+  .team {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+}

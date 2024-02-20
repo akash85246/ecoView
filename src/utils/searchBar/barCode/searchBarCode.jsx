@@ -13,7 +13,11 @@ export default function BarImgSearch() {
     <div className="barCodeImgScannerContainer">
       <div className="barCodeImgScanner">
         <div>
-          {!selectedImage ? <h1>Bar Code Image</h1> : <h1>{selectedImage.name}</h1>}
+          {!selectedImage ? (
+            <h1>Bar Code Image</h1>
+          ) : (
+            <h1>{selectedImage.name}</h1>
+          )}
           {/* <img
             src={URL.createObjectURL(selectedImage)}
             alt="Selected"
@@ -28,7 +32,7 @@ export default function BarImgSearch() {
           <img
             src={barCodeIcon}
             alt="Barcode Icon"
-            style={{ width: "50px", height: "50px" }}
+            style={{ width: "40px", height: "40px" }}
           />
           <input
             type="file"

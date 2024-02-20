@@ -1,0 +1,112 @@
+.scanner-container1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.controls {
+  position: relative;
+  margin-top: -8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.changeButton,
+.capturePhotoButton {
+  border: none;
+  background-color: transparent;
+}
+.changeButtonImg {
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+}
+.capturePhotoButtonImg {
+  width: 8rem;
+  height: 8rem;
+  cursor: pointer;
+}
+
+.scanner-container1 {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+}
+
+video {
+  margin-top: 5rem;
+  width: 100vw;
+  height: 80vh;
+}
+.capturedImage {
+  height: 85vh;
+  width: 70vw;
+}
+.focus-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  border: 2px dashed #fff;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.2);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
+
+.closeButton {
+  padding: 0.5rem 5rem;
+  font-size: 1.2rem;
+  background-color: red;
+  color: #fff;
+  border-radius: 15px;
+  margin: 0.5rem auto;
+  border: none;
+  cursor: pointer;
+  z-index: 100;
+}
+.closeButton:hover {
+  background-color: rgba(255, 0, 0, 0.847);
+}
+
+.retryButton {
+  background-color: transparent;
+  border: none;
+  margin-top: -5rem;
+}
+.retryButtonImg {
+  width: 4rem;
+  height: 5rem;
+  cursor: pointer;
+}
+@media only screen and (max-width: 600px) {
+  .controls {
+    top: 0rem;
+  }
+  .changeButtonImg {
+    width: 2rem;
+    height: 2rem;
+  }
+  .capturePhotoButtonImg {
+    width: 6rem;
+    height: 6rem;
+  }
+  .focus-box {
+    width: 100px;
+    height: 100px;
+  }
+}

@@ -19,9 +19,11 @@ export default function Scanner() {
           </div>
           <div className="scannerOptions">
             <SearchBar></SearchBar>
-            <button className="scannerIcon">
-              <img src={CameraIcon}></img>
-            </button>
+            <a href="/ImageScanner" className="scannerContainer">
+              <button className="scannerIcon">
+                <img src={CameraIcon} alt="Camera Icon" />
+              </button>
+            </a>
             <BarImgSearch></BarImgSearch>
           </div>
           <div className="services">
