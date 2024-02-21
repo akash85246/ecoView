@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import appLogo from "../../../assets/appLogo.svg";
 import "./signUp.css";
 import design from "../../../assets/signBack.svg";
@@ -63,7 +63,7 @@ export default function SignUp() {
           <img src={appLogo} alt="App Logo" className="signLogo" />
 
           <div className="signUpHeading">
-            <h1>Sign Up </h1>
+            <h1>Start your sustainable journey</h1>
             <p>Hi! Tell us more about yourself by signing up.</p>
           </div>
           <button className="googleSignInButton">
@@ -111,7 +111,7 @@ export default function SignUp() {
           </div>
           <button className="signUpButton">Verify</button>
           <p>
-            Already have an account? <a href="/logIn">Log In</a>{" "}
+            Already have an account? <a href="/signin">Log In</a>{" "}
           </p>
           <div className="termandCondition">
             By clicking 'Verify,' you agree to our Terms of Service and Privacy
