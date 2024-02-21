@@ -1,0 +1,289 @@
+.profileContainer {
+  padding-top: 7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.profilePhotoContainer {
+  position: relative;
+}
+.profilePhoto {
+  height: 20rem;
+  border-radius: 25px;
+}
+.editButton {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  cursor: pointer;
+  height: 2rem;
+}
+.fileInput {
+  display: none;
+}
+.profileInfo {
+  background-color: white;
+  width: 40vw;
+  padding: 1rem 5rem;
+  height: 18rem;
+  border-radius: 25px;
+}
+.profileInfo > section {
+  display: flex;
+  justify-content: space-between;
+  gap: 1.2rem;
+}
+.profileInfo > section:nth-child(2) {
+  flex-direction: column;
+}
+.profileInfo > section > div {
+  display: flex;
+  gap: 5rem;
+  align-items: start;
+}
+.profileInfo > section > div > h1:nth-child(1) {
+  width: 8rem;
+  color: rgba(140, 142, 151, 1);
+}
+.profileInfo > section > div > h1 {
+  margin: 0;
+  font-family: Montserrat;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.name {
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0em;
+  text-align: left;
+  border-bottom: solid 2px rgb(123, 123, 123);
+  margin: 1rem 0;
+}
+.name > h1 {
+  margin: 0;
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-weight: 800;
+
+  letter-spacing: 0em;
+  text-align: left;
+}
+.status {
+  color: rgba(140, 142, 151, 1);
+  font-family: Montserrat;
+
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: right;
+
+  font-size: 0.8rem;
+  text-align: right;
+}
+.profileButton {
+  height: 2rem;
+  font-size: 1rem;
+  border-radius: 25px;
+  border-color: rgb(155, 154, 154);
+  background-color: transparent;
+  cursor: pointer;
+}
+.additionalInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.itemHeading {
+  font-size: 2rem;
+  color: white;
+}
+.ItemList {
+  width: 90vw;
+  text-align: center;
+  margin: 2rem auto;
+  border-collapse: collapse;
+}
+.ItemRow {
+  height: 3rem;
+  font-family: Montserrat;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: white;
+}
+.ItemHead {
+  background-color: white;
+  height: 2rem;
+  font-family: Montserrat;
+  color: black !important;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0px;
+}
+.ItemDelete {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.ItemStatus {
+  background-color: white;
+  color: green;
+  padding: 0.2rem 1rem;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+.ItemDetail {
+  background-color: yellow;
+  padding: 0.5rem 2rem;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.ItemDetail:hover {
+  background-color: rgba(255, 255, 0, 0.648);
+}
+.ItemMarked {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.input {
+  font-size: 1.2rem;
+  border-radius: 25px;
+  border-color: rgb(186, 183, 183);
+}
+@media screen and (max-width: 900px) {
+  .profileContainer {
+    gap: 1rem;
+  }
+  .profilePhoto {
+    height: 14rem;
+  }
+  .profileInfo {
+    height: 13rem;
+    padding: 0.5rem 4rem;
+  }
+  .profileInfo > section {
+    gap: 0.5rem;
+  }
+  .name {
+    margin: auto;
+  }
+}
+@media screen and (max-width: 750px) {
+  .profileInfo > section > div > h1 {
+    height: 1.2rem;
+    width: auto;
+  }
+  .name > h1 {
+    font-size: 1.5rem;
+  }
+  .profileInfo {
+    padding: 0.5rem 3rem;
+  }
+  .status {
+    font-size: 0.6rem;
+  }
+  .profileInfo > section > div {
+    gap: 1rem;
+  }
+  .profileInfo > section:nth-child(2) {
+    justify-content: space-between;
+    height: 10rem;
+  }
+  .profilePhoto {
+    height: 14rem;
+  }
+  .profileInfo > section > div > h1:nth-child(1) {
+    width: 7rem;
+  }
+  .itemHeading {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 550px) {
+  .ItemList th:nth-child(4),
+  .ItemList td:nth-child(4),
+  .ItemList th:nth-child(5),
+  .ItemList td:nth-child(5),
+  .ItemList th:nth-child(6),
+  .ItemList td:nth-child(6) {
+    display: none;
+  }
+  .profileInfo {
+    padding: 0.5rem 2rem;
+  }
+  .profileInfo > section > div {
+    gap: 0.5rem;
+    justify-content: left;
+  }
+  section.profileContainer > div.profileInfo > section:nth-child(2) {
+    align-items: start;
+  }
+  .profileButton {
+    width: 100%;
+  }
+  .profilePhoto {
+    height: 11.5rem;
+  }
+  .profileInfo {
+    height: 11rem;
+  }
+  .profileInfo > section:nth-child(2) {
+    height: 8rem;
+  }
+  .name > h1 {
+    font-size: 1.2rem;
+  }
+  .profileInfo > section > div > h1 {
+    font-size: 1rem;
+  }
+
+  .profileButton {
+    font-size: 0.9rem;
+  }
+  .profileInfo > section > div > h1:nth-child(1) {
+    width: 6rem;
+  }
+  .itemHeading {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .profileInfo {
+    padding: 0.5rem 1rem;
+  }
+  .name > h1 {
+    font-size: 1rem;
+  }
+  .profileInfo > section > div > h1 {
+    font-size: 0.8rem;
+  }
+
+  .profileButton {
+    font-size: 0.7rem;
+  }
+
+  .instagram {
+    font-size: 0.7rem;
+    align-items: center;
+    margin: auto;
+  }
+  .profileInfo > section > div > h1:nth-child(1) {
+    width: 4.5rem;
+  }
+  #root > div > section.additionalInfo > table {
+    padding-top: 0;
+  }
+}

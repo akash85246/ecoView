@@ -1,0 +1,60 @@
+.about-card {
+  position: relative;
+  display: inline-block;
+}
+
+.slider {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.521);
+  color: white;
+  transition: transform 1s ease;
+  transform: translateY(100%);
+  padding: 1rem;
+  box-sizing: border-box;
+  opacity: 0;
+}
+
+.about-card:hover .slider {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.developer-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.slider h1 {
+  margin: 0;
+}
+
+.slider h2 {
+  margin: 5px 0;
+  word-break: normal;
+  font-size: 0.7rem;
+}
+@media screen and (max-width: 750px) {
+  .slider h1 {
+    font-size: 1rem;
+  }
+  .developer-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 750px) {
+  .slider h1 {
+    font-size: 0.7rem;
+  }
+  .slider h2 {
+    font-size: 0.5rem;
+    margin: 0;
+  }
+  .slider {
+    padding: 0.5rem;
+  }
+}

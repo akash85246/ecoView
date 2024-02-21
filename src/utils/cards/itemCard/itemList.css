@@ -1,0 +1,31 @@
+.itemlist {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90vw;
+  margin: auto;
+  background-color: rgba(27, 25, 25, 0.427);
+  color: white;
+  padding: 1rem;
+  cursor: pointer;
+}
+.itemlist img {
+  height: 5rem;
+  width: 5rem;
+  border-radius: 15px;
+}
+.itemlist h1 {
+  font-size: 1.2rem;
+}
+.itemlist h2 {
+  font-size: 1.2rem;
+}
+.itemlist h3 {
+  font-size: 1.2rem;
+}
+.itemlist span {
+  font-size: 1rem;
+  background-color: green;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+}

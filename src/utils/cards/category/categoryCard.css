@@ -1,0 +1,15 @@
+.category img {
+  width: 10rem;
+  height: 12rem;
+}
+.category h1 {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.411);
+  top: -14rem;
+  color: white;
+  padding: 6rem 1rem;
+  cursor: pointer;
+}
+.category h1:hover {
+  background-color: rgba(0, 0, 0, 0.84);
+}

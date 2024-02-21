@@ -1,0 +1,90 @@
+.item {
+  background-color: white;
+  width: 18rem;
+  padding-bottom: 1cqi;
+  cursor: pointer;
+}
+.item img {
+  width: 18rem;
+  height: 15rem;
+}
+.details {
+  text-align: center;
+}
+.details h1 {
+  font-family: Montserrat;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: center;
+}
+.details h2 {
+  font-family: Montserrat;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+}
+.details h3 {
+  font-family: Montserrat;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.10000000149011612px;
+  text-align: center;
+  color: rgba(35, 133, 109, 1);
+}
+.details span {
+  font-family: Montserrat;
+  font-size: 0.8rem;
+  text-align: right;
+  color: white;
+  background-color: green;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+.ItemControl {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vw;
+  margin: auto;
+  color: rgba(115, 115, 115, 1);
+  margin-top: -10rem;
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: left;
+}
+.ItemControl > div button {
+  background-color: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  height: 3rem;
+  width: 3rem;
+  border: 1px solid rgba(236, 236, 236, 1);
+}
+.ItemControl > div {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+.filter {
+  border: 1px solid rgba(221, 221, 221, 1);
+  background: white;
+  width: 10rem;
+  height: 50px;
+  padding: 11px, 29.01px, 11px, 18px;
+  border-radius: 5px;
+  border: 1px;
+  gap: 47px;
+  outline: none;
+  font-size: 1rem;
+}
+.ItemsListContainer {
+  margin-bottom: 1rem;
+}
