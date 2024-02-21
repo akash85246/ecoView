@@ -1,0 +1,173 @@
+.SignPageContainer {
+  display: flex;
+  background-image: url("../../../assets/signBackground.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  height: 100%;
+  margin: 0;
+}
+.SignPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.design {
+  position: fixed;
+
+  height: 30vw;
+  width: 30vw;
+  z-index: 1;
+  top: -2vw;
+  left: 70vw;
+}
+
+.SignUpContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  left: 5vw;
+  height: 90vh;
+  width: 45vw;
+
+  z-index: 100;
+}
+.signLogo {
+  height: 6rem;
+  width: 6rem;
+}
+
+.signPhotoContainer {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signPhotoContainer img {
+  width: 40vw;
+}
+
+.overlay {
+  position: absolute;
+  width: 34vw !important;
+  left: 0;
+}
+.orContainer {
+  border-bottom: 1px solid #000000;
+  margin: 20px 0;
+  width: 20vw;
+}
+
+.or {
+  position: relative;
+  display: inline-block;
+  top: -2rem;
+  background-color: white;
+}
+.inputContainer {
+  width: 40vw;
+}
+.inputContainer > div > span {
+  background-color: green;
+  padding: 1.1vw;
+  border-radius: 5px;
+}
+.inputContainer > div > input {
+  height: 3vw;
+  border-radius: 5px;
+  outline: none;
+  width: 70%;
+  color: rgba(151, 151, 151, 1);
+  font-size: 1.2rem;
+  padding: 0.1rem 1rem;
+}
+.inputContainer > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.signUpHeading h1 {
+  font-family: Montserrat;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.signUpHeading p {
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+
+  letter-spacing: 0px;
+  text-align: center;
+  color: rgba(123, 123, 123, 1);
+}
+.googleSignInButton {
+  display: flex;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  gap: 1rem;
+  background-color: transparent;
+
+  font-family: Montserrat;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 100;
+  cursor: pointer;
+}
+.emailError,
+.passwordError {
+  height: 1rem;
+  margin-top: -0.1rem;
+  text-align: center;
+  color: rgb(150, 1, 1);
+}
+.signUpButton {
+  display: flex;
+  width: 70%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 25px;
+  background-color: green;
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  padding: 0.5rem 2rem;
+  color: white;
+  font-weight: 100;
+  cursor: pointer;
+  border: none;
+  box-shadow: 0px 8px 12px 0px rgba(18, 70, 172, 0.3);
+}
+.signUpButton:hover {
+  background-color: rgba(0, 128, 0, 0.779);
+}
+.termandCondition {
+  width: 50%;
+  text-align: center;
+}
+@media screen and (max-width: 700px) {
+  .signPhotoContainer {
+    display: none;
+  }
+  .SignUpContainer {
+    width: 100vw;
+    left: auto;
+  }
+  .inputContainer {
+    width: 80vw;
+  }
+  .inputContainer > div > input {
+    height: 3rem;
+  }
+  .inputContainer > div > span {
+    padding: 1rem;
+  }
+  .termandCondition{
+    width: 80vw;
+  }
+}

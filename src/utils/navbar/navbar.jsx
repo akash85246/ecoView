@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import appLogo from "../../assets/appLogo.svg";
 import profilePhoto from "../../assets/defaultPhoto.jpg";
 import hamburger from "../../assets/hamIcon.svg";
@@ -26,8 +27,12 @@ export default function Navbar(props) {
         <a href="/about">About</a>
         <a href="/contact">Contact</a>
         <div className="sign">
-          <button className="signUp">Sign Up</button>
-          <button className="logIn">Login</button>
+          <Link to="/signUp">
+            <button className="signUp">Sign Up</button>
+          </Link>
+          <Link to="/signIn">
+            <button className="logIn">Login</button>
+          </Link>
         </div>
         <div>
           <Photo photo={profilePhoto} />
