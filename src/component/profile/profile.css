@@ -156,6 +156,7 @@
 .ItemMarked {
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 .input {
   font-size: 1.2rem;

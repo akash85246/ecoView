@@ -1,0 +1,84 @@
+.cauroselContainer {
+  padding-top: 5rem;
+}
+.slide img {
+  width: 100vw;
+  height: 50vh;
+}
+.nextButton,
+.backButton {
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  width: 6rem;
+  height: 6rem;
+  margin: auto 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nextButton:hover,
+.backButton:hover {
+  background-color: rgba(0, 0, 0, 0.445);
+}
+.controlButton {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  top: -45vh;
+  /* margin: auto 1rem; */
+}
+.sliderContent {
+  position: relative;
+  top: -51vh;
+  z-index: 1;
+  color: white;
+  background-color: rgba(41, 40, 40, 0.452);
+  padding: 1rem 6rem;
+  height: 46vh;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.sliderContent h1 {
+  font-family: Montserrat;
+  font-size: 4rem;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+}
+.sliderContent p {
+  font-family: Montserrat;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+  width: 50%;
+}
+.categories {
+  display: flex;
+  margin: auto;
+  width: 60%;
+  gap: 1.5rem;
+  margin-top: -10rem;
+}
+.itemListHeading {
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+  margin: auto;
+  background-color: white;
+  padding: 0rem 1rem;
+  border-radius: 10px;
+}
+.GridList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  width: 80vw;
+  margin: auto;
+  gap: 1rem;
+}

@@ -16,9 +16,10 @@
     "@fortawesome/react-fontawesome": "^0.2.0",
     "dotenv": "^16.3.1",
     "navbar": "^2.1.0",
+    "pure-react-carousel": "^1.30.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-qr-reader": "^3.0.0-beta-1",
+    "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.21.1",
     "react-scanner": "^1.1.0",
     "react-webcam": "^7.2.0"
