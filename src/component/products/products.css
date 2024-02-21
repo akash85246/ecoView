@@ -25,8 +25,7 @@
   display: flex;
   justify-content: space-between;
   position: relative;
-  top: -45vh;
-  /* margin: auto 1rem; */
+  top: -90vh;
 }
 .sliderContent {
   position: relative;
@@ -38,7 +37,7 @@
   height: 46vh;
   text-align: center;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
 }
@@ -52,19 +51,25 @@
 }
 .sliderContent p {
   font-family: Montserrat;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 400;
   line-height: 30px;
   letter-spacing: 0.20000000298023224px;
   text-align: center;
-  width: 50%;
+  width: 70%;
+  margin-top: -2rem;
+}
+.categoriesContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .categories {
   display: flex;
-  margin: auto;
-  width: 60%;
-  gap: 1.5rem;
-  margin-top: -10rem;
+  width: 80vw;
+  /* gap: 1.5rem; */
+  justify-content: space-between;
+  margin-top: -20vw;
 }
 .itemListHeading {
   display: flex;
@@ -81,4 +86,114 @@
   width: 80vw;
   margin: auto;
   gap: 1rem;
+}
+.gridItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media only screen and (max-width: 1800px) {
+  .controlButton {
+    top: -70vh;
+  }
+}
+@media only screen and (max-width: 1400px) {
+  .controlButton {
+    top: -60vh;
+  }
+  .GridList {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .controlButton {
+    top: -50vh;
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .controlButton {
+    top: -40vh;
+  }
+  .nextButton,
+  .backButton {
+    width: 4rem;
+    height: 4rem;
+  }
+  .GridList {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .sliderContent h1 {
+    font-size: 3rem;
+  }
+  .categories {
+    margin-top: -10vw;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .controlButton {
+    top: -20vh;
+  }
+  .sliderContent p {
+    font-size: 1.2rem;
+    width: 80vw;
+    margin-top: -15rem;
+  }
+  .sliderContent h1 {
+    font-size: 1.5rem;
+    margin-top: -6rem;
+  }
+  .categories {
+    margin-top: -5vw;
+  }
+  .gridButton,
+  .listButton {
+    width: 2rem !important;
+    height: 2rem !important;
+  }
+  .ItemControl > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .ItemControl h3 {
+    font-size: 0.9rem;
+  }
+  .GridList {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .filter {
+    width: 20vw !important;
+    height: 4vh !important;
+  }
+  .ItemControl > div {
+    gap: 0.5vw !important;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .controlButton {
+    top: -15vh;
+  }
+  .nextButton img,
+  .backButton img {
+    width: 2rem;
+    height: 2rem;
+  }
+  .nextButton,
+  .backButton {
+    width: 2rem;
+    height: 2rem;
+  }
+  .sliderContent p {
+    font-size: 0.7rem;
+    width: 70vw;
+    margin-top: -20vh;
+    /* margin-top: -28rem; */
+  }
+  .sliderContent h1 {
+    display: none;
+  }
+  .ItemControl h3 {
+    font-size: 0.8rem;
+  }
 }

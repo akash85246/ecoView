@@ -124,7 +124,7 @@ export default function Products(props) {
         <div className="cauroselContainer">
           <CarouselProvider
             naturalSlideWidth={100}
-            naturalSlideHeight={30}
+            naturalSlideHeight={50}
             totalSlides={3}
             isPlaying={true}
             infinite={true}
@@ -186,35 +186,37 @@ export default function Products(props) {
           </CarouselProvider>
         </div>
       </section>
-      <section className="categories">
-        <CategoryCard
-          Image={categoryImg1}
-          Details="CLOTHES"
-          onClick={() => filterItemsByCategory("Clothes")}
-        ></CategoryCard>
-        <CategoryCard
-          Image={categoryImg2}
-          Details="FURNITURE"
-          onClick={() => filterItemsByCategory("Furniture")}
-        ></CategoryCard>
-        <CategoryCard
-          Image={categoryImg3}
-          Details="UTILITY"
-          onClick={() => filterItemsByCategory("Utility")}
-        ></CategoryCard>
-        <CategoryCard
-          Image={categoryImg4}
-          Details="DECOR"
-          onClick={() => filterItemsByCategory("Decor")}
-        ></CategoryCard>
-        <CategoryCard
-          Image={categoryImg5}
-          Details="OTHERS"
-          onClick={() => filterItemsByCategory("Others")}
-        ></CategoryCard>
+      <section className="categoriesContainer">
+        <div className="categories">
+          <CategoryCard
+            Image={categoryImg1}
+            Details="CLOTHES"
+            onClick={() => filterItemsByCategory("Clothes")}
+          ></CategoryCard>
+          <CategoryCard
+            Image={categoryImg2}
+            Details="FURNITURE"
+            onClick={() => filterItemsByCategory("Furniture")}
+          ></CategoryCard>
+          <CategoryCard
+            Image={categoryImg3}
+            Details="UTILITY"
+            onClick={() => filterItemsByCategory("Utility")}
+          ></CategoryCard>
+          <CategoryCard
+            Image={categoryImg4}
+            Details="DECOR"
+            onClick={() => filterItemsByCategory("Decor")}
+          ></CategoryCard>
+          <CategoryCard
+            Image={categoryImg5}
+            Details="OTHERS"
+            onClick={() => filterItemsByCategory("Others")}
+          ></CategoryCard>
+        </div>
       </section>
       <section className="ItemControl">
-        <h3>showing all 125 item</h3>
+        <h3>showing all {filteredItems.length} items</h3>
         <div>
           <h3>views:</h3>
 

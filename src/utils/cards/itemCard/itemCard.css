@@ -52,7 +52,7 @@
   width: 80vw;
   margin: auto;
   color: rgba(115, 115, 115, 1);
-  margin-top: -10rem;
+  margin-top: -12vw;
   font-family: Montserrat;
   font-size: 1rem;
   font-weight: 700;
@@ -87,4 +87,19 @@
 }
 .ItemsListContainer {
   margin-bottom: 1rem;
+}
+@media only screen and (max-width: 700px) {
+  .category h1 {
+    font-size: 0.9rem !important;
+  }
+}
+@media only screen and (max-width: 550px) {
+  .category h1 {
+    font-size: 0.7rem !important;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .category h1 {
+    font-size: 0.5rem !important;
+  }
 }
