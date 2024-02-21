@@ -43,7 +43,7 @@
 .navbar > .appLogo {
   height: 5rem;
 }
-.navbar > section > div > button {
+.navbar > section > div button {
   font-family: Montserrat;
   font-size: 1rem;
   font-style: normal;
